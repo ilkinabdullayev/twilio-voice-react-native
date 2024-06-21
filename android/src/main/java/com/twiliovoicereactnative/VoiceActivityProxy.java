@@ -34,6 +34,7 @@ public class VoiceActivityProxy {
   }
   public void onCreate(Bundle ignoredSavedInstanceState) {
     logger.debug("onCreate(): invoked");
+    logger.info("it is flag for detect changes; will be removed");
     // Ensure the microphone permission is enabled
     // if (!checkPermissions()) {
     //   requestPermissions();
