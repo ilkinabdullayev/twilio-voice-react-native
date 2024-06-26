@@ -198,7 +198,7 @@ class NotificationUtility {
     NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
     notificationManager.createNotificationChannelGroup(
       new NotificationChannelGroupCompat.Builder(Constants.VOICE_CHANNEL_GROUP)
-        .setName("Twilio Voice").build());
+        .setName("Paniac Voice").build());
 
     for (String channelId:
       new String[]{
