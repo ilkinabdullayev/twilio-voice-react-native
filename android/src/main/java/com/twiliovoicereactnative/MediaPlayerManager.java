@@ -23,9 +23,10 @@ class MediaPlayerManager {
       .setMaxStreams(2)
       .setAudioAttributes(
         new AudioAttributes.Builder()
-          .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-          .setUsage(AudioAttributes.USAGE_VOICE_COMMUNICATION)
-          .build())
+                .setFlags(AudioAttributes.FLAG_AUDIBILITY_ENFORCED)
+                .setUsage(AudioAttributes.USAGE_ALARM)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build())
       .build();
     activeStream = 0;
     soundMap = new HashMap<>();
